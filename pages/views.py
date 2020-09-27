@@ -13,8 +13,8 @@ def main(request):
 			"Concerns with FCPS' proposal to change the TJ admissions system"
 		]
 		subject = choice(subjects)
-		recepient = request.POST.getlist('rep')
-		#recepient = ['rushilwiz@gmail.com', 'lettertofcps@gmail.com']
+		#recepient = request.POST.getlist('rep')
+		recepient = ['rushilwiz@gmail.com', 'lettertofcps@gmail.com']
 		context = {
 			'form':request.POST,
 			'mailto': f'mailto:{",".join(request.POST.getlist("rep"))}?subject={subject}',

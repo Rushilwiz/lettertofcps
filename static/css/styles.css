@@ -5,11 +5,15 @@ footer {
 #letter {
 	overflow-y: scroll;
 	height:35vh;
+	background-color: #ededed;
+	padding: 10px;
 }
 
 #letter-second {
 	overflow-y: scroll;
 	height:35vh;
+	background-color: #ededed;
+	padding: 10px;
 }
 
 #letter-mail {
