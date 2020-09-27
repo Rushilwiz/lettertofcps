@@ -6,10 +6,34 @@
       <div class="text-center text-fluid">
         <h1 class="mt-5">Merit Lottery is not the answer.</h1>
         <p class="lead text-left">Hello, we're a group of TJHSST students who have been working diligently for the past few weeks on a letter voicing our opinions against FCPS's recent proposal to introduce a lottery system to the TJ admissions process. The people who introduced the proposal have been extremely vocal -- leading the Board to believe this is the popular opinion. By sending this letter written by us to the decision makers, you are showing them that the majority of the TJ community disapproves of the proposal. We must make our voices heard.</p>
-        <h3 class="mb-4"><a href="https://bit.ly/TJLetterToFCPS" target="_blank">Find the letter here!</a></h3>
+        <h3 class="mb-4"><a href="https://bit.ly/TJLetterToFCPS" target="_blank">Read the letter here!</a></h3>
       </div>
       <form name="form" method="post">
         {% csrf_token %}
+        <legend class="border-bottom pb-2 mb-4"> Who are you sending it to?<button type="button" id="dropdownButton" class="float-right" onclick="toggle()"><i class="fa fa-chevron-down" aria-hidden="true"></i></button></legend>
+        <ul id="recipients" class="hide">
+          <div class="row">
+            <div class="col">
+              <li>Karen Keys-Gamarra<br><i>Member-at-Large</i></li>
+              <li>Tamara Derenak Kaufax<br><i>Lee District Representative</i></li>
+              <li>Karl Frisch<br><i>Providence District Representative</i></li>
+              <li>Laura Jane Cohen<br><i>Springfield District Representative</i></li>
+              <li>Ralph Northam<br><i>VA Governor</i></li>
+            </div>
+            <div class="col">
+              <li>Abrar Omeish<br><i>Member-at-Large</i></li>
+              <li>Melanie K. Meren<br><i>Hunter Mill District Representative</i></li>
+              <li>Ricardy Anderson<br><i>Mason District Representative</i></li>
+              <li>Atif Qarni<br><i>Secretary of Education</i></li>
+            </div>
+            <div class="col">
+              <li>Rachna Sizemore Heizer<br><i>Member-at-Large</i></li>
+              <li>Elaine Tholen<br><i>Dranesville District Representative</i></li>
+              <li>Karen Corbett Sanders<br><i>Mount Vernon District Representative</i></li>
+              <li>Scott Brabrand<br><i>FCPS Superintendent</i></li>
+            </div>
+          </div>
+        </ul>
         <fieldset class="form-group hide">
           <legend class="border-bottom pb-2 mb-4"> Who would you like to send it to?&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-info" onclick="selectAll()">Select All</button><button type="button" id="dropdownButton" class="float-right" onclick="toggle()"><i class="fa fa-chevron-down" aria-hidden="true"></i></button></legend>
           <div id="who">
@@ -114,7 +138,7 @@
           </div>
         </fieldset>
         <fieldset class="form-group">
-          <legend class="border-bottom mb-4"> Just some quick info&nbsp;<small class="text-muted">(this info will not be saved)</small></legend>
+          <legend class="border-bottom mb-4"> Fill out the email below to generate your personalized email&nbsp;<small class="text-muted">(this info will not be saved)</small></legend>
           <div class="form-group">
             <label for="name">Your Name:</label>
             <input name="name" type="text" class="form-control" id="name">

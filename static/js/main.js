@@ -9,7 +9,7 @@ function selectAll() {
 }
 
 function toggle() {
-	document.getElementById("who").classList.toggle("hide");
+	document.getElementById("recipients").classList.toggle("hide");
 }
 
 function copyLetter() {
@@ -22,6 +22,10 @@ function copySecond() {
 
 function copyList() {
 	document.getElementById('copyList').innerHTML = "Copied!";
+}
+
+function copySubject() {
+    document.getElementById('copySubject').innerHTML = "Copied!";
 }
 
 var clipboard = new ClipboardJS('.btn');
