@@ -36,6 +36,6 @@ def main(request):
 		email.attach_alternative(html_message, "text/html")
 		print("### EMAIL SENT ###")
 		print (recepient)
-		email.send(fail_silently=False)
+		#email.send(fail_silently=False)
 		return render (request, "pages/email.html", context=context)
 	return render(request, "pages/index.html")
