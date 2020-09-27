@@ -84,7 +84,7 @@
 <ol class="text-left mt-5">
         <h2 class="text-center">If that didn't work,</h2>
           <h3><li>First, copy the letter
-          <button type="button" onclick="copyLetter()" id="copyLetterButtonSecond" data-clipboard-target="#letter-second" class="btn btn-secondary">Copy</button></li></h3>
+          <button type="button" onclick="copySecond()" id="copyLetterButtonSecond" data-clipboard-target="#letter-second" class="btn btn-secondary">Copy</button></li></h3>
           <div id="letter-second">
 <p>My name is {{form.name}}, and I am writing today to voice my support for the following letter and my disapproval of the currently proposed system. Please reply to <a href="mailto:lettertofcps@gmail.com">lettertofcps@gmail.com</a> with any questions or comments.</p>
 <p>{{form.message}}</p>
@@ -151,7 +151,7 @@
 <p><strong>Sincerely, <br>{{form.name}}</strong></p>
 
 </div>
-        <h3 class="mt-3"><li>Second, copy the reciepient list <button type="button" onclick="copyLetter()" id="copyList" data-clipboard-target="#letter-mail" class="btn btn-secondary">Copy</button></li>
+        <h3 class="mt-3"><li>Second, copy the reciepient list <button type="button" onclick="copyList()" id="copyList" data-clipboard-target="#letter-mail" class="btn btn-secondary">Copy</button></li>
         </h3>
         <div id="letter-mail">
           {{maillist}}

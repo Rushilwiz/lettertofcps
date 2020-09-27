@@ -16,8 +16,12 @@ function copyLetter() {
 	document.getElementById('copyLetterButton').innerHTML = "Copied!";
 }
 
-function copyLetterSecond() {
+function copySecond() {
 	document.getElementById('copyLetterButtonSecond').innerHTML = "Copied!";
+}
+
+function copyList() {
+	document.getElementById('copyList').innerHTML = "Copied!";
 }
 
 var clipboard = new ClipboardJS('.btn');
