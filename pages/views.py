@@ -13,7 +13,7 @@ def main(request):
 			"Concerns with FCPS' proposal to change the TJ admissions system"
 		]
 		subject = choice(subjects)
-		recepient = request.POST.getlist('rep') + ['tjconments@fcps.edu']
+		recepient = request.POST.getlist('rep') + ['tjcomments@fcps.edu']
 		#recepient = ['rushilwiz@gmail.com', 'lettertofcps@gmail.com']
 		context = {
 			'form':request.POST,
